@@ -1,10 +1,10 @@
 class User {
-    long id;
-    String name;
-    String email;
-    String code;
-    int age;
-    String contactNum;
+    private final long id;
+    private final String name;
+    private final String email;
+    private final String code;
+    private final int age;
+    private final String contactNum;
 
     public User(UserBuilder ub) {
         this.id = ub.id;
@@ -40,12 +40,12 @@ class User {
     }
 
     static class UserBuilder {
-        long id;
-        String name;
-        String email;
-        String code;
-        int age;
-        String contactNum;
+        private long id;
+        private String name;
+        private String email;
+        private String code;
+        private int age;
+        private String contactNum;
 
         UserBuilder id(long id) {
             this.id = id;
